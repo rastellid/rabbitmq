@@ -9,6 +9,7 @@ services:
     value: rabbitmq
   - key: RABBITMQ_DEFAULT_PASS
     generateValue: true
+  healthCheckPath: /api/health/checks/alarms
   disk:
     name: rabbitmq
     mountPath: /var/lib/rabbitmq
